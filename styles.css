@@ -12,3 +12,13 @@
     --border-yellow: #1BAFEA;
     --accent: #DA2F3C;
 }
+
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    list-style-decoration: none;
+    outline:none;
+    border:0;
+    background:none;
+}
