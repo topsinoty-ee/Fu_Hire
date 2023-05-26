@@ -16,6 +16,7 @@
   --heading1: 96px;
   --subtitle: 18px;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +26,7 @@
   border: 0;
   background: none;
 }
+
 html,
 body {
   font-family: 'Poppins', sans-serif;
@@ -36,6 +38,7 @@ body {
   background-color: #ffffff;
   cursor: auto;
 }
+
 main {
   display: flex;
   flex: 1;
@@ -53,53 +56,64 @@ main {
   padding: 01 01 1 1;
   margin: 34 03 034 03;
 }
+
 .fill-green {
   background-color: var(--light-green);
 }
+
 .text-green {
   color: var(--light-green);
 }
+
 .nav-item .btn {
   width: 100px;
 }
+
 .nav:has(.nav-item .btn) {
   gap: 10px;
 }
+
 .navbar-nav {
   flex-flow: row nowrap;
 }
+
 .hero {
   flex: 1;
   display: flex;
   place-items: center;
   place-content: center;
 }
+
 .hero h1.title {
   font-size: var(--heading1);
   text-align: center;
 }
+
 .hero h2.subtitle {
   font-size: var(--subtitle);
   font-style: italic;
 }
+
 section.hero {
-  background-image: url('../Assets/background/black-background-shape.svg'),
-    url('../Assets/background/pattern.svg');
+  background-image: url('./Assets/Background/background-white.svg') ,url('../Assets/background/pattern.svg');
   background-repeat: no-repeat, repeat;
-  background-position: right bottom, center;
+  background-position: right center, center;
   background-size: 50%, 5%;
   width: 100% !important;
   max-height: 100vh !important;
   min-height: 600px !important;
 }
+
 section.hero input[type='search'] {
   background-color: var(--white) !important;
   width: 70% !important;
   flex: 1;
 }
+
 section.hero input::placeholder {
   font-style: italic !important;
 }
+
 section.hero form {
   background-color: var(--white) !important;
   width: 100% !important;
@@ -109,10 +123,12 @@ section.hero form {
   gap: 10px;
   box-shadow: 0px 1px 0px 0px;
 }
+
 #hero-btn {
   width: 100%;
   display: flex !important;
 }
+
 .hero .container {
   width: 100%;
   height: 350px;
@@ -120,31 +136,31 @@ section.hero form {
   min-height: 300px;
   padding: 30px 50px !important;
   background-color: var(--white);
-  border-radius: 10px !important;
+  border-radius: 10px 10px 0 0 !important;
   box-shadow: 0px 4px 10px 1px;
   display: flex;
   flex-flow: column nowrap;
   place-content: space-between;
 }
-.btn-group-sm {
-  .btn {
-    border-radius: 999rem;
-  }
+
+button.greenCircle,
+button.yellowCircle {
+  width: 50% !important;
+  height: 100% !important;
+  position: relative;
+  flex: 1;
+
 }
+
 button.greenCircle {
-  width: calc(40% - 300px) !important;
-  height: calc(40% - 100vh) !important;
-  position: absolute;
-  top: 0;
-  left: 77.5vw;
+  right: 0;
   background-color: green;
+  border-radius: 0 0 0 10px !important;
 }
 
 button.yellowCircle {
-  width: calc(40% - 300px) !important
-  height: 400px;
-  position: absolute;
-  bottom: 1;
-  right: 0;
+  left: 0;
   background-color: var(--border-yellow);
+  border-radius: 0 0 10px 0 !important;
+
 }
