@@ -7,12 +7,12 @@
   --light-green: #4ea842;
   --border-green: #50ff50;
   --primary: #4ea842;
-  --fu--hire-black: #232b2b;
+  --fu-hire-black: #232b2b;
   --border-yellow: #f5ff50;
   --secondary: #f5d400;
-  --white--bg: #ffffff;
+  --white-bg: #ffffff;
   --white-input: #f5f5f5;
-  /*size styles*/
+  /* Size styles */
   --heading1: 96px;
   --subtitle: 18px;
 }
@@ -49,13 +49,11 @@ main {
   align-content: flex-start;
   align-self: flex-start;
   justify-content: flex-start;
-  flex-grow: 1;
-  flex-shrink: 0;
+  flex: 0 1;
   height: auto;
   position: relative;
-  border: solid dashed;
-  padding: 01 01 1 1;
-  margin: 34 03 034 03;
+  padding: 1px;
+  margin: 34px 3px;
 }
 
 .fill-green {
@@ -77,6 +75,7 @@ main {
 .navbar-nav {
   flex-flow: row nowrap;
 }
+
 .hero {
   flex: 1;
   display: flex;
@@ -93,6 +92,7 @@ main {
   font-size: var(--subtitle);
   font-style: italic;
 }
+
 section.flex-grow {
   width: 100%;
 }
@@ -109,7 +109,7 @@ section.hero {
 }
 
 section.hero input[type='search'] {
-  background-color: var(--white) !important;
+  background-color: var(--white-input) !important;
   width: 70% !important;
   flex: 1;
 }
@@ -119,7 +119,7 @@ section.hero input::placeholder {
 }
 
 section.hero form {
-  background-color: var(--white) !important;
+  background-color: var(--white-input) !important;
   width: 100% !important;
   border-radius: 10px !important;
   padding: 5px 20px !important;
@@ -138,7 +138,7 @@ section.hero form {
   max-height: 500px;
   min-height: 300px;
   padding: 30px 50px !important;
-  background-color: var(--white);
+  background-color: var(--white-bg);
   border-radius: 10px 10px 0 0 !important;
   display: flex;
   flex-flow: column nowrap;
@@ -155,9 +155,9 @@ button.yellowCircle {
 
 button.greenCircle {
   right: 0;
-  background-color: var(--green);
+  background-color: var(--primary);
   border-radius: 0 0 0 10px !important;
-  color: var(--white) !important;
+  color: var(--white-bg) !important;
 }
 
 button.yellowCircle {
@@ -174,52 +174,54 @@ button.yellowCircle {
 #partners {
   background: linear-gradient(
     to top,
-    var(--green),
-    var(--green) 7.5%,
-    var(--white) 40%,
-    var(--white) 99.5%
+    var(--primary),
+    var(--primary) 7.5%,
+    var(--white-bg) 40%,
+    var(--white-bg) 99.5%
   );
-  display: flex;
   display: flex;
   flex-flow: column nowrap !important;
   padding: 96px;
-  color: var(--dark) !important;
+  color: var(--fu-hire-black) !important;
   height: 90vh !important;
   max-height: 648px;
   min-height: 648px !important;
   width: 100%;
 }
+
 h1.title {
   text-align: center;
   font-size: 64px;
 }
+
 #partners.row {
   width: 80%;
 }
+
 .card {
   height: 350px;
   padding: 5px;
 }
+
 #who-are-we {
   background: linear-gradient(
     to bottom,
-    var(--green),
-    var(--green) 7.5%,
-    var(--white) 40%,
-    var(--white) 99.5%
+    var(--primary),
+    var(--primary) 7.5%,
+    var(--white-bg) 40%,
+    var(--white-bg) 99.5%
   );
-  display: flex;
   display: flex;
   flex-flow: row nowrap !important;
   padding: 96px;
-  color: var(--dark) !important;
+  color: var(--fu-hire-black) !important;
   height: 90vh !important;
   max-height: 648px;
   min-height: 648px !important;
   width: 100%;
 }
-.who-are-we-body{
-  background-color:red;
-  color:red;
-}
 
+.who-are-we-body {
+  background-color: red;
+  color: red;
+}
