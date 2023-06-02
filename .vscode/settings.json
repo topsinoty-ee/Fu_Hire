@@ -12,5 +12,6 @@
         "Töötukaasa",
         "Tuleviku"
     ],
-    "livePreview.defaultPreviewPath": "c:\\Users\\temitope.oa25503\\OneDrive - Tallinna Koolid\\Dokumendid\\GitHub\\Fu_Hire\\index.html"
+    "livePreview.defaultPreviewPath": "c:\\Users\\temitope.oa25503\\OneDrive - Tallinna Koolid\\Dokumendid\\GitHub\\Fu_Hire\\index.html",
+    "svg.preview.background": "transparent"
 }
