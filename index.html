@@ -10,22 +10,22 @@
   <!-- //TODO:Add links to all anchor elements -->
   <body>
     <!-- Navbar -->
-    <header>
+    <header class="flex w-full justify-between items-center h-14 sticky top-0 bg-white py-2">
       <!-- Logo -->
-      <div>
-        <img src="./Assets/logo.svg" alt="Fu-Hire Logo" />
+      <div class="h-full">
+        <img src="./Assets/logo.svg" alt="Fu-Hire Logo" class="h-full"/>
       </div>
-      <div>
+      <nav class="min-w-[170px] w-1/5 max-w-[200px] h-full items-center">
         <!-- Login, Sign-up -->
-        <ul>
-          <li>
-            <a href="#"><button>Sign-up</button></a>
+        <ul class="w-full flex h-full items-center justify-between">
+          <li class="flex-grow">
+            <a href="#" class="flex-grow"><button type="button" class="bg-green text-white px-4 py-2 rounded-lg border-green-400 border">Sign-up</button></a>
           </li>
-          <li>
-            <a href="#"><button>Login</button></a>
+          <li class="flex-grow">
+            <a href="#"><button  class="bg-white text-black px-4 py-2 rounded-lg border-light-400 border">Login</button></a>
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
     <!-- contents -->
     <main>
