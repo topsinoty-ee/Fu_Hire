@@ -1,94 +1,223 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet" />
     <title>Fu-Hire</title>
   </head>
   <!-- //TODO:Add links to all anchor elements -->
-  <body>
+  <body class="flex flex-col w-full">
     <!-- Navbar -->
-    <header class="flex w-full justify-between items-center h-14 sticky top-0 bg-white py-2">
+    <header
+      class="flex w-full justify-between items-center h-14 sticky top-0 bg-white py-2 shadow-dark-700 shadow-sm">
       <!-- Logo -->
       <div class="h-full">
-        <img src="./Assets/logo.svg" alt="Fu-Hire Logo" class="h-full"/>
+        <img src="./Assets/logo.svg" alt="Fu-Hire Logo" class="h-full" />
       </div>
       <nav class="min-w-[170px] w-1/5 max-w-[200px] h-full items-center">
         <!-- Login, Sign-up -->
         <ul class="w-full flex h-full items-center justify-between">
           <li class="flex-grow">
-            <a href="#" class="flex-grow"><button type="button" class="bg-green text-white px-4 py-2 rounded-lg border-green-400 border">Sign-up</button></a>
+            <a href="#" class="flex-groW">
+              <button
+                type="button"
+                class="bg-green text-white px-4 py-2 rounded-lg border-green-400 border">
+                Sign-up
+              </button>
+            </a>
           </li>
           <li class="flex-grow">
-            <a href="#"><button  class="bg-white text-black px-4 py-2 rounded-lg border-light-400 border">Login</button></a>
+            <a href="#"
+              ><button
+                class="bg-accent-whiteLight text-black px-4 py-2 rounded-lg border-accent-whiteLight border">
+                Login
+              </button></a
+            >
           </li>
         </ul>
       </nav>
     </header>
     <!-- contents -->
-    <main>
+    <main class="flex flex-col">
       <!-- hero -->
-      <section>
-        <div>
-          <h1>
-            <span>Fu</span>
-            <span>-Hire</span>
-          </h1>
-        </div>
-        <!-- Hero Search -->
-        <div>
-          <span>
-            <img src="./assets/Icons/Search.svg" alt="" />
-          </span>
-          <!-- Search input -->
-          <form>
-            <input
-              type="text"
-              id="HeroSearch"
-              placeholder="Search anything..."
-            />
-          </form>
-        </div>
-        <!-- User type selection-->
-        <div>
-          <a href="#"><button>I want to get hired</button></a>
-          <a href="#"><button>I want to hire</button></a>
+      <section
+        id="hero"
+        class="h-[90vh] bg-center bg-hero bg-repeat max-h-[576px] flex place-content-center place-items-center px-48 py-16">
+        <div
+          class="w-75 container bg-white h-full rounded-lg border border-light-400 shadow-black shadow-sm mix-blend-normal flex items-center flex-col pt-2 justify-between">
+          <div>
+            <h1 class="flex text-8xl">
+              <span class="text-green">Fu</span>
+              <span class="text-black">-Hire</span>
+            </h1>
+          </div>
+          <!-- Hero Search -->
+          <div
+            class="flex border rounded-xl w-4/5 py-1 px-3 border-accent-greenLight items-center">
+            <!-- Search input -->
+            <form class="flex-grow h-full flex">
+              <input
+                type="search"
+                name="q"
+                class="w-full h-full outline-none bg-white"
+                placeholder="Search for companies, hires or positions..."
+                aria-label="Search through site for companies, hires or positions"
+                minlength="3"
+                maxlength="40" />
+              <span class="order-2">
+                <button
+                  type="submit"
+                  class="bg-green h-full py-px px-2 rounded-lg text-white border border-accent-greenLight">
+                  Search
+                </button>
+              </span>
+            </form>
+          </div>
+          <!-- User type selection-->
+          <div class="h-36 flex align-middle w-full">
+            <a
+              href="#"
+              class="flex-grow flex place-content-center place-items-center"
+              ><button
+                type="button"
+                class="w-full h-full bg-green rounded-bl-lg max-w-1/2">
+                <span class="h-full w-full text-2xl text-accent-yellow">
+                  I want to <br />
+                  get hired
+                </span>
+              </button></a
+            >
+            <a
+              href="#"
+              class="flex-grow flex place-content-center place-items-center"
+              ><button
+                type="button"
+                class="w-full h-full bg-yellow rounded-br-lg max-w-1/2">
+                <span class="h-full w-full text-2xl text-accent-greenDark">
+                  I want to <br />
+                  hire
+                </span>
+              </button></a
+            >
+          </div>
         </div>
       </section>
       <!-- Partners -->
-      <section>
+      <section
+        id="partners"
+        class="flex flex-col items-center h-[70vh] max-h-[478px] px-32 gap-8">
         <div>
-          <h1>Our Partners</h1>
+          <h1 class="title">Our Partners</h1>
         </div>
-        <div>
-          <div>
-            <a href="#" target="_blank">
-              <img
-                src="./Assets/Partners/Frame 4.png"
-                alt="Eesti Töötukaasa"
-                title="Eesti töötukaasa"
-              />
-            </a>
+        <div class="cards flex w-full h-full">
+          <!-- Tootukaasa -->
+          <div class="card">
+            <!-- Title -->
+            <div class="card-item">
+              <h3 class="title">Eesti Tootukaasa</h3>
+            </div>
+            <!-- content -->
+            <div class="card-item flex-grow flex flex-col justify-between">
+              <!-- Text -->
+              <div>
+                <p class="">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Cupiditate dolores provident sunt obcaecati quo quisquam,
+                  illum voluptatem eos sed neque, voluptates asperiores
+                  nesciunt.
+                </p>
+              </div>
+              <!-- Button -->
+              <div
+                class="flex items-center content-center justify-center h-1/5">
+                <a
+                  href="#"
+                  rel="noreferrer"
+                  title="Eesti Tootukaasa"
+                  target="_blank"
+                  class="h-full w-full flex items-center content-center justify-center">
+                  <button
+                    type="button"
+                    class="bg-green text-white w-full rounded-lg flex items-center content-center justify-center">
+                    Eesti Tootukaasa
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
-          <div>
-            <a href="#" target="_blank">
-              <img
-                src="./Assets/Partners/Frame 5.png"
-                alt="Tuleviku tegijad"
-                title="Tuleviku tegijad"
-              />
-            </a>
+          <!-- Tuleviku tegijad-->
+          <div class="card">
+            <!-- Title -->
+            <div class="card-item">
+              <h3 class="title">Tuleviku Tegijad</h3>
+            </div>
+            <!-- content -->
+            <div class="card-item flex-grow flex flex-col justify-between">
+              <!-- Text -->
+              <div>
+                <p class="">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Cupiditate dolores provident sunt obcaecati quo quisquam,
+                  illum voluptatem eos sed neque, voluptates asperiores
+                  nesciunt.
+                </p>
+              </div>
+              <!-- Button -->
+              <div
+                class="flex items-center content-center justify-center h-1/5">
+                <a
+                  href="#"
+                  rel="noreferrer"
+                  title="Tuleviku Tegijad"
+                  target="_blank"
+                  class="h-full w-full flex items-center content-center justify-center">
+                  <button
+                    type="button"
+                    class="bg-green text-white w-full rounded-lg flex items-center content-center justify-center">
+                    Tuleviku Tegijad
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
-          <div>
-            <a href="#" target="_blank">
-              <img
-                src="./Assets/Partners/Frame 6.png"
-                alt="Haridus- ja Noorteamet"
-                title="Haridus- ja Noorteamet"
-              />
-            </a>
+          <!-- Haridus- ja Noorteamet -->
+          <div class="card">
+            <!-- Title -->
+            <div class="card-item">
+              <h3 class="title">Haridus- ja Noorteamet</h3>
+            </div>
+            <!-- content -->
+            <div class="card-item flex-grow flex flex-col justify-between">
+              <!-- Text -->
+              <div>
+                <p class="">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Cupiditate dolores provident sunt obcaecati quo quisquam,
+                  illum voluptatem eos sed neque, voluptates asperiores
+                  nesciunt.
+                </p>
+              </div>
+              <!-- Button -->
+              <div
+                class="flex items-center content-center justify-center h-1/5">
+                <a
+                  href="#"
+                  rel="noreferrer"
+                  title="Haridus- ja Noorteamet"
+                  target="_blank"
+                  class="h-full w-full flex items-center content-center justify-center">
+                  <button
+                    type="button"
+                    class="bg-green text-white w-full rounded-lg flex items-center content-center justify-center">
+                    Haridus- ja Noorteamet
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -106,9 +235,7 @@
         </div>
         <!-- Big question mark -->
         <div>
-          <span>
-            ?
-          </span>
+          <span> ? </span>
         </div>
       </section>
       <!-- Testimonials -->
@@ -130,8 +257,7 @@
             <div>
               <img
                 src="./Assets/Testimonials/Image.png"
-                alt="Stefan Reynolds experience story"
-              />
+                alt="Stefan Reynolds experience story" />
             </div>
           </div>
           <div>
@@ -148,8 +274,7 @@
             <div>
               <img
                 src="./Assets/Testimonials/Image-2.png"
-                alt="Talen Saag experience story"
-              />
+                alt="Talen Saag experience story" />
             </div>
           </div>
           <div>
@@ -166,8 +291,7 @@
             <div>
               <img
                 src="./Assets/Testimonials/Image-1.png"
-                alt="Jane Dasmer experience story"
-              />
+                alt="Jane Dasmer experience story" />
             </div>
           </div>
         </section>

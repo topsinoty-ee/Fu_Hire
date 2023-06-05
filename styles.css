@@ -1,3 +1,32 @@
+/** @format */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  main,
+  footer {
+    @apply px-4;
+  }
+  main>section{
+    @apply first:my-0 my-3
+  }
+  #hero {
+    background-image: url('/Assets/Background/hero-pattern.svg');
+  }
+
+  /* Title */
+  h1.title{
+    @apply text-7xl text-green text-center
+  }
+  .cards{
+    @apply gap-6
+  }
+  .cards>.card{
+    @apply bg-accent-whiteLight flex-grow flex flex-col w-full h-full px-4 py-2 rounded-lg gap-6
+  }
+  .card-item .title{
+    @apply text-5xl text-accent-green
+  }
+}

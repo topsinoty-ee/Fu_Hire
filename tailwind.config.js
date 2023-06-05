@@ -45,15 +45,30 @@ module.exports = {
       },
       colors: {
         black: '#000000',
+        white: '#ffffff',
         green: '#4EA842',
         yellow: '#f5ff50',
         accent: {
+          black: '#333333',
+          blackLight: '#666666',
+          blackDark: '#000000',
+          white: '#f8f8f8',
+          whiteLight: '#dddddd',
+          whiteDark: '#ffffff',
           green: '#1E403F',
           greenLight: '#7DC98F',
           greenDark: '#18302E',
-        },
+          yellow: '#E6D120',
+          yellowLight: '#FFFBC3',
+          yellowDark: '#B6A519',
+        },      
       },
-
+      backgroundSize: {
+        'auto': 'auto',
+        'cover': 'cover',
+        'contain': 'contain',
+        'hero': '5%',
+      },
     },
   },
   variants: {
