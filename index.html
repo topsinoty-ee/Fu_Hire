@@ -1,5 +1,3 @@
-<!-- @format -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,7 +16,7 @@
       <div class="h-full">
         <img src="./Assets/logo.svg" alt="Fu-Hire Logo" class="h-full" />
       </div>
-      <nav class="min-w-[170px] w-1/5 max-w-[200px] h-full items-center">
+      <nav class="min-w-20 w-1/5 max-w-[200px] h-full items-center">
         <!-- Login, Sign-up -->
         <ul class="w-full flex h-full items-center justify-between">
           <li class="flex-grow">
@@ -109,7 +107,7 @@
       <!-- Partners -->
       <section
         id="partners"
-        class="flex flex-col items-center h-[70vh] max-h-[478px] px-32 gap-8">
+        class="flex flex-col items-center h-[90vh] max-h-[560px] px-32 py-8 gap-8 bg-gradient-to-b from-[#D9D9D9] via-white via-90% to-green">
         <div>
           <h1 class="title">Our Partners</h1>
         </div>
@@ -222,24 +220,42 @@
         </div>
       </section>
       <!-- Who are we? -->
-      <section>
-        <div>
-          <div>
-            <h2>Who are we?</h2>
-            <p>
-              Fu-Hire is an organization aimed on helping youths start their
-              careers
+      <section
+        id="About"
+        class="flex flex-col items-center px-32 py-20 bg-gradient-to-b from-green from-95% to-yellow">
+        <div
+          class="w-full h-full bg-white container gap-8 flex flex-col justify-between px-4 py-2 rounded-lg shadow-md border border-accent-greenLight shadow-accent-greenLight items-center">
+          <div class="flex flex-col flex-grow">
+            <h2
+              class="text-center text-3xl text-accent-green flex gap-2 content-center justify-center py-4 pb-6">
+              Unlock Your <span class="text-green">Future</span> with
+              <span class="font-semibold flex"
+                ><span class="text-green">Fu</span><span>-Hire</span></span
+              >: Where
+              <span
+                class="text-green hover:underline hover:underline-green hover:transition-all duration-300"
+                >Opportunities Meet Ambition!</span
+              >
+            </h2>
+            <p class="text-center">
+              <span class="font-semibold"
+                ><span class="text-green">Fu</span><span>-Hire</span></span
+              > is a dynamic platform dedicated to connecting youths with
+              job opportunities. We believe in empowering young individuals by
+              providing them with the necessary tools, resources, and
+              opportunities to kickstart their careers. Our goal is to bridge
+              the gap between employers and talented young individuals,
+              facilitating meaningful employment experiences that benefit both
+              parties. <span class="text-green">Together</span>, let's pave the way for a bright and successful
+              future.
             </p>
           </div>
-          <a href="#"><button>Learn more</button></a>
-        </div>
-        <!-- Big question mark -->
-        <div>
-          <span> ? </span>
+          <a href="#" class="w-full"><button class="px-2 py-1 text-center text-white rounded-lg bg-green w-full border border-accent-green">Learn more</button></a>
         </div>
       </section>
       <!-- Testimonials -->
-      <section>
+      <!-- //TODO: Make carousel -->
+      <section class="bg-yellow">
         <div><h2>Testimonials</h2></div>
         <!-- Testimonial carousel -->
         <section>
@@ -298,32 +314,32 @@
       </section>
     </main>
     <!-- footer -->
-    <footer>
-      <div>
+    <footer class="flex h-72 bg-accent-black text-yellow px-4 py-3">
+      <div class="flex-grow flex flex-col gap-3">
         <h3>Popular Pages</h3>
         <div>
           <ul>
-            <a><li>Home</li></a>
-            <a><li>Profile</li></a>
-            <a><li>Jobs near me</li></a>
-            <a><li>FAQs</li></a>
-            <a><li>About us</li></a>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Jobs near me</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">About us</a></li>
           </ul>
         </div>
       </div>
-      <div>
+      <div class="flex-grow flex flex-col gap-3">
         <h3>FAQs</h3>
         <div>
           <ul>
-            <a><li>Make an account</li></a>
-            <a><li>Is it free?</li></a>
-            <a><li>How to find jobs</li></a>
-            <a><li>How do i get paid</li></a>
+            <li><a href="#">Make an account</a></li>
+            <li><a href="#">Is it free?</a></li>
+            <li><a href="#">How to find jobs</a></li>
+            <li><a href="#">How do i get paid</a></li>
           </ul>
         </div>
       </div>
-      <div>
-        <h3>Contact Us</h3>
+      <div class="flex-grow">
+        <h3 class="text-4xl">Contact Us</h3>
         <!-- Socials -->
         <!-- //TODO:add icons for socials -->
         <div></div>
