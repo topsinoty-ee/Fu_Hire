@@ -31,4 +31,48 @@
   footer>div h3{
     @apply font-semibold text-2xl
   }
+
+  #carousel {
+    @apply h-80 border-2 border-accent-whiteDark bg-white rounded-lg p-4 relative overflow-hidden;
+
+    > div[role='list'] {
+      @apply h-full w-full flex gap-2 transition-transform duration-500 ease-in-out;
+
+      > div[role='listitem'] {
+        @apply h-full w-1/2 bg-accent-whiteLight inline-block transition-opacity duration-500 ease-in-out rounded-md p-4 text-center;
+
+        > div > img {
+          @apply rounded-full h-20;
+        }
+      }
+    }
+  }
+
+  /* Default styles */
+[role="list"] {
+  display: flex;
+  justify-content: space-between;
+}
+
+[role="listitem"] {
+  flex-basis: 48%;
+  display: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  [role="list"] {
+    flex-wrap: wrap;
+  }
+
+  [role="listitem"] {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 882px) {
+  nav{
+    min-width: 200px
+  }
+}
 }

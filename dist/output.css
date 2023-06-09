@@ -611,6 +611,115 @@ footer>div h3 {
   font-weight: 600;
 }
 
+#carousel {
+  position: relative;
+  height: 20rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1rem;
+  > div[role='list'] {
+    display: flex;
+  }
+  > div[role='list'] {
+    height: 100%;
+  }
+  > div[role='list'] {
+    width: 100%;
+  }
+  > div[role='list'] {
+    gap: 0.5rem;
+  }
+  > div[role='list'] {
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  > div[role='list'] {
+    transition-duration: 500ms;
+  }
+  > div[role='list'] {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  > div[role='list'] {
+    > div[role='listitem'] {
+      display: inline-block;
+    }
+    > div[role='listitem'] {
+      height: 100%;
+    }
+    > div[role='listitem'] {
+      width: 50%;
+    }
+    > div[role='listitem'] {
+      border-radius: 0.375rem;
+    }
+    > div[role='listitem'] {
+      --tw-bg-opacity: 1;
+      background-color: rgb(221 221 221 / var(--tw-bg-opacity));
+    }
+    > div[role='listitem'] {
+      padding: 1rem;
+    }
+    > div[role='listitem'] {
+      text-align: center;
+    }
+    > div[role='listitem'] {
+      transition-property: opacity;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+    }
+    > div[role='listitem'] {
+      transition-duration: 500ms;
+    }
+    > div[role='listitem'] {
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    > div[role='listitem'] {
+      > div > img {
+        height: 5rem;
+      }
+      > div > img {
+        border-radius: 9999px;
+      }
+    }
+  }
+}
+
+/* Default styles */
+
+[role="list"] {
+  display: flex;
+  justify-content: space-between;
+}
+
+[role="listitem"] {
+  flex-basis: 48%;
+  display: none;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 768px) {
+  [role="list"] {
+    flex-wrap: wrap;
+  }
+
+  [role="listitem"] {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 882px) {
+  nav{
+    min-width: 200px
+  }
+}
+
 .visible {
   visibility: visible;
 }
@@ -629,6 +738,10 @@ footer>div h3 {
 
 .top-0 {
   top: 0px;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .order-2 {
@@ -735,6 +848,10 @@ footer>div h3 {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .place-content-center {
   place-content: center;
 }
@@ -759,16 +876,20 @@ footer>div h3 {
   justify-content: space-between;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .rounded-lg {
@@ -831,6 +952,10 @@ footer>div h3 {
   background-color: rgb(245 255 80 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\/Assets\/Background\/\'\)\] {
+  background-image: url('./Assets/Background/');
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -868,16 +993,8 @@ footer>div h3 {
   --tw-gradient-to: #f5ff50 var(--tw-gradient-to-position);
 }
 
-.bg-hero {
-  background-size: 5%;
-}
-
-.bg-center {
-  background-position: center;
-}
-
-.bg-repeat {
-  background-repeat: repeat;
+.p-4 {
+  padding: 1rem;
 }
 
 .px-2 {
@@ -925,9 +1042,19 @@ footer>div h3 {
   padding-bottom: 5rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .py-8 {
@@ -940,9 +1067,8 @@ footer>div h3 {
   padding-bottom: 1px;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .pb-6 {
@@ -971,14 +1097,14 @@ footer>div h3 {
   line-height: 2.25rem;
 }
 
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
 }
 
 .font-semibold {
