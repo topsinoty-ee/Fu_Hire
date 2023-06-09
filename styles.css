@@ -1,24 +1,78 @@
-/* font === poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+/** @format */
 
-::root{
-    /* colors */
-    --primary: #FBB03B;
-    --secondary: #F5D400;
-    --background: #F4FDFF;
-    --background-placeholder: #F4FDFF;
-    --content: #DA2F3C;
-    --border-green: #255762;
-    --border-yellow: #1BAFEA;
-    --accent: #DA2F3C;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+
+  #hero {
+    background-image: url('/Assets/Background/hero-pattern.svg');
+  }
+
+  /* Title */
+  h1.title{
+    @apply text-7xl text-green text-center
+  }
+  .cards{
+    @apply gap-6
+  }
+  .card{
+    @apply bg-accent-whiteLight flex flex-col h-full px-4 py-2 rounded-lg gap-6 border-2 border-accent-white w-1/3
+  }
+  .card-item .title{
+    @apply text-5xl text-accent-green
+  }
+  .card button{
+    @apply border border-accent-greenLight
+  }
+  footer>div h3{
+    @apply font-semibold text-2xl
+  }
+
+  #carousel {
+    @apply h-80 border-2 border-accent-whiteDark bg-white rounded-lg p-4 relative overflow-hidden;
+
+    > div[role='list'] {
+      @apply h-full w-full flex gap-2 transition-transform duration-500 ease-in-out;
+
+      > div[role='listitem'] {
+        @apply h-full w-1/2 bg-accent-whiteLight inline-block transition-opacity duration-500 ease-in-out rounded-md p-4 text-center;
+
+        > div > img {
+          @apply rounded-full h-20;
+        }
+      }
+    }
+  }
+
+  /* Default styles */
+[role="list"] {
+  display: flex;
+  justify-content: space-between;
 }
 
-*{
-    margin:0;
-    padding:0;
-    text-decoration:none;
-    list-style-decoration: none;
-    outline:none;
-    border:0;
-    background:none;
+[role="listitem"] {
+  flex-basis: 48%;
+  display: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  [role="list"] {
+    flex-wrap: wrap;
+  }
+
+  [role="listitem"] {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 882px) {
+  nav{
+    min-width: 200px
+  }
+}
 }
