@@ -605,7 +605,7 @@ h1.title {
   border-color: rgb(125 201 143 / var(--tw-border-opacity));
 }
 
-footer>div h3 {
+footer > div h3 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
@@ -692,12 +692,12 @@ footer>div h3 {
 
 /* Default styles */
 
-[role="list"] {
+[role='list'] {
   display: flex;
   justify-content: space-between;
 }
 
-[role="listitem"] {
+[role='listitem'] {
   flex-basis: 48%;
   display: none;
 }
@@ -705,19 +705,35 @@ footer>div h3 {
 /* Responsive styles */
 
 @media screen and (max-width: 768px) {
-  [role="list"] {
+  [role='list'] {
     flex-wrap: wrap;
   }
 
-  [role="listitem"] {
+  [role='listitem'] {
     flex-basis: 100%;
   }
 }
 
 @media (max-width: 882px) {
-  nav{
-    min-width: 200px
+  nav {
+    min-width: 200px;
   }
+
+  #hero {
+    padding: 4rem;
+  }
+}
+
+.visible {
+  visibility: visible;
+}
+
+.collapse {
+  visibility: collapse;
+}
+
+.relative {
+  position: relative;
 }
 
 .sticky {
@@ -736,12 +752,24 @@ footer>div h3 {
   order: 2;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .contents {
   display: contents;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-1\/5 {
@@ -768,6 +796,10 @@ footer>div h3 {
   height: 100%;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
 .max-h-\[560px\] {
   max-height: 560px;
 }
@@ -788,6 +820,14 @@ footer>div h3 {
   width: 100%;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
 .max-w-\[200px\] {
   max-width: 200px;
 }
@@ -796,8 +836,24 @@ footer>div h3 {
   flex-grow: 1;
 }
 
+.border-collapse {
+  border-collapse: collapse;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.resize {
+  resize: both;
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .place-content-center {
@@ -1094,6 +1150,10 @@ footer>div h3 {
   color: rgb(245 255 80 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .mix-blend-normal {
   mix-blend-mode: normal;
 }
@@ -1123,6 +1183,10 @@ footer>div h3 {
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.outline {
+  outline-style: solid;
 }
 
 .duration-300 {
